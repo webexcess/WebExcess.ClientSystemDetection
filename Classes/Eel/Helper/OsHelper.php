@@ -11,51 +11,61 @@ namespace WebExcess\ClientSystemDetection\Eel\Helper;
  * source code.
  */
 
-use TYPO3\Flow\Annotations as Flow;
-use TYPO3\Eel\ProtectedContextAwareInterface;
+use Neos\Flow\Annotations as Flow;
+use Neos\Eel\ProtectedContextAwareInterface;
+use Sinergi\BrowserDetector\Os;
 
 /**
  * String helpers for Eel contexts
  *
  * @Flow\Proxy(false)
  */
-class DeviceHelper implements ProtectedContextAwareInterface
+class OsHelper implements ProtectedContextAwareInterface
 {
 
     /**
      * @return bool
      */
-    public function isMobile()
+    public function isWin()
     {
-        $detect = new \Mobile_Detect;
-        return $detect->isMobile() && !$detect->isTablet() ? true : false;
+        $os = new Os();
+        return $os->getName() === Os::WINDOWS ? true : false;
     }
 
     /**
      * @return bool
      */
-    public function isTablet()
+    public function isWinPhone()
     {
-        $detect = new \Mobile_Detect;
-        return $detect->isTablet();
+        $os = new Os();
+        return $os->getName() === Os::WINDOWS_PHONE ? true : false;
     }
 
     /**
      * @return bool
      */
-    public function isTouch()
+    public function isOSX()
     {
-        $detect = new \Mobile_Detect;
-        return $detect->isMobile() || $detect->isTablet() ? true : false;
+        $os = new Os();
+        return $os->getName() === Os::OSX ? true : false;
     }
 
     /**
      * @return bool
      */
-    public function isDesktop()
+    public function isiOS()
     {
-        $detect = new \Mobile_Detect;
-        return !$detect->isMobile() && !$detect->isTablet() ? true : false;
+        $os = new Os();
+        return $os->getName() === Os::IOS ? true : false;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isAndroid()
+    {
+        $os = new Os();
+        return $os->getName() === Os::ANDROID ? true : false;
     }
 
     /**

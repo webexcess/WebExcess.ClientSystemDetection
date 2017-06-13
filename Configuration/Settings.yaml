@@ -1,5 +1,5 @@
-TYPO3:
-  TypoScript:
+Neos:
+  Fusion:
     defaultContext:
       Detect.Browser: 'WebExcess\ClientSystemDetection\Eel\Helper\BrowserHelper'
       Detect.OS: 'WebExcess\ClientSystemDetection\Eel\Helper\OsHelper'

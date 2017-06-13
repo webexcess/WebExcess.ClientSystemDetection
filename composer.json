@@ -1,7 +1,7 @@
 {
     "name": "webexcess/clientsystemdetection",
     "description": "Detect the device, operating system or browser of the client.",
-    "type": "typo3-flow-plugin",
+    "type": "neos-plugin",
     "license": "MIT",
     "authors": [
         {
@@ -12,12 +12,12 @@
         }
     ],
     "require": {
-        "neos/neos": "^2.3",
+        "neos/neos": "^3.0",
         "mobiledetect/mobiledetectlib": "^2.8",
         "sinergi/browser-detector": "^6.1"
     },
     "autoload": {
-        "psr-0": {
+        "psr-4": {
             "WebExcess\\ClientSystemDetection\\": "Classes"
         }
     },
