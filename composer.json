@@ -1,0 +1,30 @@
+{
+    "name": "webexcess/clientsystemdetection",
+    "description": "Detect the device, operating system or browser of the client.",
+    "type": "typo3-flow-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Samuel Hauser",
+            "email": "samuel.hauser@dotpulse.ch",
+            "homepage": "https://github.com/samuelhauser",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "neos/neos": "^2.3",
+        "mobiledetect/mobiledetectlib": "^2.8",
+        "sinergi/browser-detector": "^6.1"
+    },
+    "autoload": {
+        "psr-0": {
+            "WebExcess\\ClientSystemDetection\\": "Classes"
+        }
+    },
+    "extra": {
+        "installer-name": "WebExcess.ClientSystemDetection",
+        "neos": {
+            "package-key": "WebExcess.ClientSystemDetection"
+        }
+    }
+}

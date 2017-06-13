@@ -1,0 +1,6 @@
+TYPO3:
+  TypoScript:
+    defaultContext:
+      Detect.Browser: 'WebExcess\ClientSystemDetection\Eel\Helper\BrowserHelper'
+      Detect.OS: 'WebExcess\ClientSystemDetection\Eel\Helper\OsHelper'
+      Detect.Device: 'WebExcess\ClientSystemDetection\Eel\Helper\DeviceHelper'
