@@ -4,7 +4,7 @@
 
 Use this package to detect your clients device, operating system and browser. It offers different Eel-Helpers.
 
-WebExcess.ClientSystemDetection use the packages [Mobile-Detect](https://github.com/serbanghita/Mobile-Detect) and [Browser Detector](https://github.com/sinergi/php-browser-detector).
+WebExcess.ClientSystemDetection uses the packages [Mobile-Detect](https://github.com/serbanghita/Mobile-Detect) and [Browser Detector](https://github.com/sinergi/php-browser-detector).
 
 ## Compatibility and Maintenance
 WebExcess.ClientSystemDetection is currently being maintained for Neos 3.x.
